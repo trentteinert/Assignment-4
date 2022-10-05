@@ -33,7 +33,12 @@ function changeImg() {
   history.go(0);
 }
 
-const t = document.getElementById("table"); //tr has an id of table
-const td = t.getElementsByTagName("td");
+const table = document.querySelectorAll("td");
 
-t.backgroundColor = "blue";
+for (let i = 0; i < 6; i++) {
+  if (i % 2 == 0) {
+    table[i].classList.toggle("td-two");
+  } else {
+    table[i].classList.toggle("td");
+  }
+}

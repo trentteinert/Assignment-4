@@ -83,6 +83,12 @@ span {
 img {
   max-width: 50%;
 }
-td {
+.primary_table {
+  background-color: rgb(255, 255, 255);
+}
+.td {
   background-color: white;
+}
+.td-two {
+  background-color: green;
 }
